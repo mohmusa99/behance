@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+
+    <!--Bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/assets/css/inddex.css" />
+
+    <title>.inder</title>
+  </head>
+
+  <body>
+    <section id="wrapper">
+      <div class="innerWrap d-flex flex-row">
+        <div
+          class="leftSide m-4"
+          style="width: 20%; height: 100vh; background-color: #f9f9f9"
+        >
+          <div class="span navbar-brand logo text-center p-3">
+            <div class="circle"></div>
+
+            <div class="inder">
+              <strong class="" style="font-size: 3rem">
+                <span style="font-size: 5rem; color: #404bda">.</span
+                >inder</strong
+              >
+            </div>
+          </div>
+
+          <div class="navSection">
+            <nav>
+              <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+                <li class="nav-item w-100">
+                  <a
+                    class="nav-link active hover-effect py-3"
+                    aria-current="page"
+                    href="#"
+                    ><i class="bi bi-mouse pe-2"></i> <span> Dashboard</span></a
+                  >
+                </li>
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-file-earmark-richtext pe-2"></i>
+                    <span> Post</span></a
+                  >
+                </li>
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-grid pe-2"></i> <span> Categories</span></a
+                  >
+                </li>
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-folder2-open pe-2"></i>
+                    <span> Media</span></a
+                  >
+                </li>
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-pc-display-horizontal pe-2"></i>
+                    <span> Pages</span></a
+                  >
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ms-5 footerNav">
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-person-bounding-box pe-2"></i>
+                    <span> Users</span></a
+                  >
+                </li>
+                <li class="nav-item w-100">
+                  <a class="nav-link py-3" aria-current="page" href="#"
+                    ><i class="bi bi-gear pe-2"></i> <span> Settings</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="rightSide m-4" style="width: 80%; height: 100vh">
+          <div class="d-flex justify-content-between">
+            <div class="searchBAr w-50">
+              <input
+                class="form-control me-2 rounded-pill has-feedback-left"
+                type="search"
+                placeholder=" &#61442; Search"
+              />
+            </div>
+            <div class="userPanel">
+              <nav>
+                <ul class="flex-row d-flex">
+                  <li>
+                    <select
+                      class="form-select rounded-pill me-2"
+                      aria-label="Default select example"
+                    >
+                      <option selected>En</option>
+                      <option value="1">De</option>
+                      <option value="2">Ar</option>
+                    </select>
+                  </li>
+                  <li>
+                    <div class="py-2 px-3 notiBell ms-3">
+                      <i class="bi bi-bell-fill position-relative"></i>
+                      <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+                      >
+                        <span class="visually-hidden">New alerts</span>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="ms-3">
+                      <img
+                        src="/assets/images/cat.jpg"
+                        class="display_Pic"
+                        style="width: 40px; height: 40px"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <section class="mainBody">
+            <div>
+              <h3>Dashboard</h3>
+              <div class="d-flex justify-content-between pt-3">
+                <div class="dashCard d-flex px-4 py-3">
+                  <img
+                    src="/assets/images/display.svg"
+                    class="cardIcon px-4 me-3"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="cardNum">1 200 000</span>
+                    <span class="cardText">total visits</span>
+                  </div>
+                </div>
+
+                <div class="dashCard d-flex px-4 py-3">
+                  <img
+                    src="/assets/images/file-earmark-richtext.svg"
+                    class="cardIcon px-4 me-3"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="cardNum">700 000</span>
+                    <span class="cardText">total articles</span>
+                  </div>
+                </div>
+                <div class="dashCard d-flex px-4 py-3">
+                  <img
+                    src="/assets/images/envelope-fill.svg"
+                    class="cardIcon px-4 me-3"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="cardNum">900 000</span>
+                    <span class="cardText">total subscription</span>
+                  </div>
+                </div>
+                <div class="dashCard d-flex px-4 py-3">
+                  <img
+                    src="/assets/images/pen.svg"
+                    class="cardIcon px-4 me-3"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="cardNum">3000</span>
+                    <span class="cardText">total authors</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
