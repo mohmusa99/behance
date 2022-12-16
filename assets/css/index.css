@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&display=swap');
+
+body{
+    font-family: "inter";
+}
+.leftSide{
+    border-radius: 50px;
+}
+
+
+/* .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 40px;
+    left: 95px;
+    
+}
+
+.logo{
+    position: relative;
+} */
+
+.span{
+    margin-bottom: 60px;
+}
+
+/* a .bi-mouse:hover{
+    
+} */
+
+.nav-link{
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.nav-link:hover, .nav-link:active{
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #3E4CD9;
+}
+
+.nav-link span{
+    font-weight: 700;
+    /* background-color: #fff; */
+    border-radius: 50px;
+    color: black !important;
+}
+
+li {
+    position: relative;
+    list-style: none;
+}
+
+.nav-link{
+    padding-left: 30px !important;
+}
+
+.footerNav{
+    margin-top: 100px;
+}
+
+.notiBell{
+    border-radius: 50%;
+    background-color: #f9f9f9;
+}
+.display_Pic{
+    border-radius: 50%;
+}
+
+.dashboardHeader{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cardIcon{
+    border-radius: 50%;
+    background-color: #fff; 
+    color: #3E4CD9;
+}
+
+.dashCard{
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    width: 25%;
+}
+
+.cardNum{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.cardText{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.customerHeader, .categoriesHEader, .visitorStat{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.customersPercent{
+    font-weight: 500;
+    font-size: 20px;
+    color: orangered;
+}
+
+.customersNum{
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.perDay, thead, .timestamp, .t2Head{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.newCustomersCard, .categoriesTable, .canvas, .latestPostsCard{
+    background-color: #f9f9f9;
+    border-radius: 25px;
+}
+
+.customers_CategoriesColumn{
+    width: 25%;
+}
+
+#table1 td {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+  }
+
+#table1 tr:hover{
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+#table1 td:first-child {
+    padding-left:20px;
+    padding-right:0;
+  }
+
+  .tableSvg{
+    border-radius: 7px;
+    height: 30px; 
+    margin: 0 10px;
+  }
+
+  .titleText{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.authorText{
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.statusText{
+    background-color: #35C789;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.t2{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:30px;
+}
+
+.card-img-top{
+    border-radius: 40px 40px 10px 10px;
+    position: relative;
+}
+
+.card{
+    border: none;
+    width: 20rem;
+    background-color: #f9f9f9;
+    border-radius: 40px;
+}
+
+.cardProfileImg{
+    width: 20px;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-body{
+    background-color: #f9f9f9;
+    height: 50%;
+    border-radius: 0 0 40px 40px;
+}
+
+.cardStatusText{
+    position: absolute;
+    top: 85px;
+    left: 20px;
+}
+
+/* .hover-effect::before{
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-bottom-right-radius: 70%;
+    background: #f9f9f9;
+    box-shadow: 20px 20px 0 5px #fff;
+  } */
+
+/* 
+  .hover-effect::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 200px;
+    height: 40px;
+    width: 40px;
+    border-top-right-radius: 50%;
+    background: #fff;
+    box-shadow: 0 20px 0 0 #a0a;
+  } */

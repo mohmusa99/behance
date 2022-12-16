@@ -24,7 +24,9 @@
     />
 
     <!--CSS-->
-    <link rel="stylesheet" href="/assets/css/inddex.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
     <title>.inder</title>
   </head>
@@ -34,7 +36,7 @@
       <div class="innerWrap d-flex flex-row">
         <div
           class="leftSide m-4"
-          style="width: 20%; height: 100vh; background-color: #f9f9f9"
+          style="width: 20%; height: 125vh; background-color: #f9f9f9"
         >
           <div class="span navbar-brand logo text-center p-3">
             <div class="circle"></div>
@@ -52,7 +54,7 @@
               <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
                 <li class="nav-item w-100">
                   <a
-                    class="nav-link active hover-effect py-3"
+                    class="nav-link py-3"
                     aria-current="page"
                     href="#"
                     ><i class="bi bi-mouse pe-2"></i> <span> Dashboard</span></a
@@ -147,9 +149,9 @@
           </div>
           <section class="mainBody">
             <div>
-              <h3>Dashboard</h3>
+              <h3 class="dashboardHeader pt-3">Dashboard</h3>
               <div class="d-flex justify-content-between pt-3">
-                <div class="dashCard d-flex px-4 py-3">
+                <div class="dashCard d-flex px-4 py-3 mx-2">
                   <img
                     src="/assets/images/display.svg"
                     class="cardIcon px-4 me-3"
@@ -161,7 +163,7 @@
                   </div>
                 </div>
 
-                <div class="dashCard d-flex px-4 py-3">
+                <div class="dashCard d-flex px-4 py-3 mx-2">
                   <img
                     src="/assets/images/file-earmark-richtext.svg"
                     class="cardIcon px-4 me-3"
@@ -172,7 +174,7 @@
                     <span class="cardText">total articles</span>
                   </div>
                 </div>
-                <div class="dashCard d-flex px-4 py-3">
+                <div class="dashCard d-flex px-4 py-3 mx-2">
                   <img
                     src="/assets/images/envelope-fill.svg"
                     class="cardIcon px-4 me-3"
@@ -183,23 +185,178 @@
                     <span class="cardText">total subscription</span>
                   </div>
                 </div>
-                <div class="dashCard d-flex px-4 py-3">
+                <div class="dashCard d-flex px-4 py-3 mx-2">
                   <img
                     src="/assets/images/pen.svg"
                     class="cardIcon px-4 me-3"
                     alt=""
                   />
                   <div class="d-flex flex-column">
-                    <span class="cardNum">3000</span>
+                    <span class="cardNum">1 130 000</span>
                     <span class="cardText">total authors</span>
                   </div>
                 </div>
+              </div>
+              <div class="d-flex pt-4">
+                <div class="d-flex flex-column customers_CategoriesColumn">
+                  <div class="newCustomersCard px-4 py-3 mx-2">
+                    <h4 class="customerHeader pb-2">New customers</h4>
+                    <div class="d-flex">
+                      <div class="d-flex flex-column">
+                        <span class="customersNum">+ 1 000</span>
+                        <span class="perDay d-flex justify-content-end"
+                          >per day</span
+                        >
+                      </div>
+                      <span class="customersPercent"
+                        >&nbsp;<img
+                          src="/assets/images/thermometer-low.svg"
+                          alt=""
+                        />4.2%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="categoriesTable px-4 py-3 mx-2 mt-4">
+                    <h4 class="categoriesHEader ps-3">Categories on Top</h4>
+                    <table id="table1" class="table-hover w-100">
+                      <thead>
+                        <td>Category</td>
+                        <td class="d-flex justify-content-end">Users</td>
+                      </thead>
+                      <tbody>
+                        <div class="ux">
+                          <tr>
+                            <td>UX design</td>
+                            <td class="usersNum d-flex justify-content-end">
+                              1,2k
+                            </td>
+                          </tr>
+                        </div>
+                        <tr>
+                          <td>Math</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            1,1k
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>History</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            943
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tutorials</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            781
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Development</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            428
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Beauty</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            456
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Beauty</td>
+                          <td class="usersNum d-flex justify-content-end">
+                            285
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <div class="canvas w-100 px-4 py-3 mx-2">
+                    <h4 class="visitorStat pb-2">Visitors Statistics</h4>
+                     <canvas id="myChart" style="max-height: 200px;"></canvas></div>
+                 
+                    <div class="latestPostsCard px-4 py-3 mx-2 mt-4">
+                      <h4 class="latestPosts ps-2">Latest posts</h4>
+                      <table id="table2">
+                        <th>
+                          <tr>
+                            <td class="t2Head ps-2">Date&Time</td>
+                            <td class="t2Head text-center">Cover</td>
+                            <td class="t2Head">Title</td>
+                            <td class="t2Head">Author</td>
+                            <td class="t2Head">Status</td>
+                          </tr>
+                        </th>
+                        <tbody>
+                          <tr>
+                            <td class="t2 timestamp ps-2">11 sept at 12:20am</td>
+                            <td><img class=" tableSvg" src="/assets/images/flat-mountains.svg" alt=""></td>
+                            <td class="t2 titleText">Reddit vs WallStreet: GameStop Saga Explained</td>
+                            <td class="t2 authorText">Anna Patrik</td>
+                            <td class="t2"><span class="statusText py-1 px-3 rounded-pill">Active</span></td>
+                          </tr>
+                          <tr>
+                            <td class="t2 timestamp ps-2">11 sept at 12:20am</td>
+                            <td><img class=" tableSvg" src="/assets/images/flat-mountains.svg" alt=""></td>
+                            <td class="t2 titleText">10 Ukranian Product IT Companies You Should know</td>
+                            <td class="t2 authorText">Sabella Dhananajay</td>
+                            <td class="t2"><span class="statusText py-1 px-3 rounded-pill">Active</span></td>
+                          </tr><tr>
+                            <td class="t2 timestamp ps-2">11 sept at 12:20am</td>
+                            <td><img class=" tableSvg" src="/assets/images/flat-mountains.svg" alt=""></td>
+                            <td class="t2 titleText">Multichain Opportunities in Blockchain Development</td>
+                            <td class="t2 authorText">Moukhtar Envar</td>
+                            <td class="t2"><span class="statusText py-1 px-3 rounded-pill">Active</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                </div> 
               </div>
             </div>
           </section>
         </div>
       </div>
     </section>
+
+    <script>
+      var xValues = [
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+      ];
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              data: [900, 1300, 800, 1200, 1500, 2000, 1630, 2210, 1830, 3078],
+              borderColor: "blue",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+        },
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
